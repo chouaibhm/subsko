@@ -6,5 +6,8 @@
 </head>
 <body>
 <iframe src="javascript:alert(document.domain)"></iframe>
+<script>
+  parent.postMessage('<img src=1 onerror=alert(document.domain)>', '*');
+</script>
 </body>
 </html>
